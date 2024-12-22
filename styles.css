@@ -1,0 +1,41 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e272e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.animation-container {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #A0C4FF;
+    background-color: #394867;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.animated-svg {
+    width: 100%;
+    height: auto;
+    animation: fadeIn 3s ease-in-out infinite alternate;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.7;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
